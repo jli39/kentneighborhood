@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Package Self-pickup</title>
+	<link rel="stylesheet" href="<?php echo base_url('application/views/manager/styles/style.css'); ?>" type="text/css"/>
+	<script src="<?php echo base_url('application/views/manager/scripts/libs/modernizr/modernizr.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('application/views/manager/scripts/config.js'); ?>" type="text/javascript"></script>
+</head>
+<body>
+	<header id="header">
+		<hgroup>
+			<h1 class="site_title">KentNeighboorhood</h1>
+		</hgroup>
+	</header> <!-- end of header bar -->
+		<section id="main" >
+			<article class="module width_full">
+				<header>
+                    <h3>Package Pickup</h3>
+                    <ul class="tabs">
+                        <li class="active"><a href="<?php echo site_url('manager/PackageController/registerpackage');?>">register</a></li>
+                    </ul>
+                </header>
+				<div class="module_content">
+					<form method = "post" action="<?php echo site_url('manager/PackageController/checkpackage');?>" name='packageform'>
+						<fieldset>
+							<label for="username">username:</label>
+							<input type="text" value="<?php echo $username;?>" name="username"/>
+						</fieldset>
+						<fieldset>
+							<label for="room">room number:</label>
+							<input type="text" value="<?php echo $room;?>" name="room"/>
+						</fieldset>
+						<br/><br/><br/>
+						<div class="tc h30">
+							<input type="submit" value="submit" class="alt_btn" />
+						</div>
+						<div style="<?php echo $display; ?>"><h4 class="alert_error"><?php echo $message; ?></h4></div>
+					</form>
+				</div>
+
+				<div class="tab_container">
+                <div id="tab1" class="tab_content">
+                    <table class="tablesorter" cellspacing="0"> 
+                    <thead> 
+                        <tr>  
+                        	<th>status</th>
+                            <th>username</th> 
+                            <th>carrier</th> 
+                            <th>tracking num</th>
+                            <th>room</th>
+                            <th>arrive time</th>
+                            <th>pick up</th>
+                        </tr> 
+                    </thead> 
+                    <tbody> 
+                    <?php foreach($info as $row):?>
+                    	<?php if($row['pickup_time'] == '0000-00-00 00:00:00'):?>
+                            <tr> 
+                            	<td>arrived</td>
+                                <td><?php echo $row['username']?></td>
+                                <td><?php echo $row['carrier']?></td>
+                                <td><?php echo $row['tracking_num']?></td>
+                                <td><?php echo $row['room']?></td>
+                                <td><?php echo $row['arrive_time']?></td>
+                                <td><a href="<?php echo site_url('manager/PackageController/update/') . $row['username'] . '/' . $row['room'] . '/' . $row['tracking_num'];?>">[confirm]</a></td>
+                            </tr> 
+                        <?php endif; ?>
+                        <?php if($row['pickup_time'] != '0000-00-00 00:00:00'):?>
+                            <tr> 
+                            	<td>delivered</td>
+                                <td><?php echo $row['username']?></td>
+                                <td><?php echo $row['carrier']?></td>
+                                <td><?php echo $row['tracking_num']?></td>
+                                <td><?php echo $row['room']?></td>
+                                <td><?php echo $row['arrive_time']?></td>
+                                <td>------</td>
+                            </tr> 
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                    </tbody> 
+                    </table>
+                    <?php if (strlen($pagination)): ?>
+                    <div>
+                        Pages: <?php echo $pagination; ?>
+                    </div>
+                <?php endif; ?>
+                </div><!-- end of #tab1 -->
+            </div><!-- end of .tab_container -->
+			</article>
+		</section>
+	<script src="<?php echo base_url('application/views/manager/scripts/libs/require/require.js'); ?>" type="text/javascript" data-main="scripts/app/index/main"></script>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>manager dashboard</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<frameset rows="90,*" framespacing="0" border="0" id="frame-parent">
+ 	<frame src="<?php echo site_url('manager/IndexController/top/') . 'Dashboard/' . 'None';?>" id="header-frame" name="header-frame" frameborder="no" scrolling="no">
+  	<frameset cols="442, *" framespacing="0" border="0" id="frame-body">
+    	<frame src="<?php echo site_url('manager/IndexController/menu');?>" id="menu-frame" name="menu-frame" frameborder="no" scrolling="yes">
+    	<frame src="<?php echo site_url('manager/IndexController/content');?>" id="main-frame" name="main-frame" frameborder="no" scrolling="yes">
+  	</frameset>
+</frameset>
+</head>
+</html>

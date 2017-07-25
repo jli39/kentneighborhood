@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="<?php echo base_url('application/views/home/css/bootstrap.css'); ?>" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="<?php echo base_url('application/views/home/js/jquery.min.js'); ?>"></script>
+<!-- Custom Theme files -->
+<!--menu-->
+<script src="<?php echo base_url('application/views/home/js/scripts.js'); ?>"></script>
+<script src="<?php echo base_url('application/views/home/js/floorplans.js'); ?>"></script>
+<link href="<?php echo base_url('application/views/home/css/styles.css'); ?>" rel="stylesheet">
+<!--//menu-->
+<!--theme-style-->
+<link href="<?php echo base_url('application/views/home/css/style.css'); ?>" rel="stylesheet" type="text/css" media="all" />	
+<link href="<?php echo base_url('application/views/home/css/floorplans.css'); ?>" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Home" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+<body >
+<!--header-->
+<div class="header">
+	<div class="container">
+		<!--logo-->
+			<div class="logo">
+				<h1><a href="<?php echo site_url('Home/index'); ?>">Kent Neighborhood</a></h1>
+			</div>
+		<!--//logo-->
+		<div class="top-nav">
+			<ul class="right-icons">
+				<li><a class="play-icon user-popup" href="<?php echo base_url('application/views/home/#user-dialog'); ?>"><i class="glyphicon glyphicon-user"> </i>User</a></li>
+				<li><a class="play-icon admin-popup" href="<?php echo base_url('application/views/home/#admin-dialog'); ?>"><i class="glyphicon glyphicon-cog"> </i>Admin</a></a></li>
+				
+			</ul>
+		<div class="clearfix"> </div>
+			<!--pop-up-box-->
+			   
+				<link href="<?php echo base_url('application/views/home/css/popuo-box.css'); ?>" rel="stylesheet" type="text/css" media="all"/>
+				<script src="<?php echo base_url('application/views/home/js/jquery.magnific-popup.js'); ?>" type="text/javascript"></script>
+			<!--//pop-up-box-->
+				<div id="user-dialog" class="mfp-hide">
+					    <!-- tabs-box -->
+				<div class="sap_tabs">	
+				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						  <ul class="resp-tabs-list">
+						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>User Login</span></li>
+							  <div class="clearfix"></div>
+						  </ul>				  	 
+						  <div class="login-container">
+						  	<label for="email">Email</label><br>
+						  	<input id="email" type="email" name="email">
+						  	<br>
+						  	<label for="password">password</label><br>
+						  	<input id="password" type="password" name="password">
+						  	<br>
+						  	<div id="signin">Sign in</div>
+						  	<ul>
+					      		<li><a href="#">Forgot password?</a></li>
+					      		<li><a href="#">Click here to register.</a></li>
+					      		<li><a href="#">Send Verification Email.</a></li>
+					      	</ul>
+					      </div>
+					 </div>
+				</div>
+				</div>
+				 <script>
+						$(document).ready(function() {
+						$('.user-popup').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+
+
+				<div id="admin-dialog" class="mfp-hide">
+					    <!-- tabs-box -->
+				<div class="sap_tabs">	
+				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						  <ul class="resp-tabs-list">
+						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>Admin Login</span></li>
+							  <div class="clearfix"></div>
+						  </ul>				  	 
+						  <div class="login-container">
+						  	<label for="email">Email</label><br>
+						  	<input id="email" type="email" name="email">
+						  	<br>
+						  	<label for="password">password</label><br>
+						  	<input id="password" type="password" name="password">
+						  	<br>
+						  	<div id="signin">Sign in</div>
+						  	<ul>
+					      		<li><a href="#">Forgot password?</a></li>
+					      		<li><a href="#">Click here to register.</a></li>
+					      		<li><a href="#">Send Verification Email.</a></li>
+					      	</ul>
+					      </div>
+					 </div>
+				</div>
+				</div>
+				 <script>
+						$(document).ready(function() {
+						$('.admin-popup').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+					
+	
+		</div>
+		<div class="clearfix"> </div>
+		</div>	
+</div>
+
+<div class="refine">
+	<div class="left">
+		Refine:
+		<input type="radio" name="beds">1Bed
+		<input type="radio" name="beds">2Beds
+		<a class="update">Update</a>
+	</div>
+	<div class="right">
+		Do you want to search by Apt#
+		<input type="text" name="apartment" placeholder="Apartment#">
+		<a class="go">Go</a>
+	</div>
+</div>
+
+<div class="tabs-container">
+	<div class="tabs">
+		<ul>
+			<li id="stratford-tab" class="selected-tab" onclick="changeTabs(1)">Stratford</li>
+			<li id="cobblestone-tab" class="other-tab" onclick="changeTabs(2)">Cobblestone</li>
+			<li id="hampton-tab" class="other-tab" onclick="changeTabs(3)">Hampton</li>
+			<li id="wilshire-tab" class="other-tab" onclick="changeTabs(4)">Wilshire</li>
+		</ul>
+	</div>
+	<div class="detail">
+		<div id="stratford" class="selected-detail" id="stratford">
+			<span class="tab-name">Stratford</span><br>
+			<span class="available">(Available)</span><br>
+			<table>
+				<tr>
+					<td>Bed</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Bath</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Sq.FT.</td>
+					<td>860</td>
+				</tr>
+				<tr>
+					<td>Rent</td>
+					<td>$894-$978</td>
+				</tr>
+			</table>
+			<img src="<?php echo base_url('application/views/home/images/1f.jpg'); ?>">
+		</div>
+		<div id="cobblestone" class="other-detail" id="cobblestone">
+			<h4>Stratford</h4>
+			<h2>(Available)</h2>
+			<table>
+				<tr>
+					<td>Bed</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Bath</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Sq.FT.</td>
+					<td>980</td>
+				</tr>
+				<tr>
+					<td>Rent</td>
+					<td>$878-$956</td>
+				</tr>
+			</table>
+			<img src="<?php echo base_url('application/views/home/images/2f.jpg'); ?>">
+		</div>
+		<div id="hampton" class="other-detail" id="hampton">
+			<h4>Stratford</h4>
+			<h2>(Available)</h2>
+			<table>
+				<tr>
+					<td>Bed</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>Bath</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Sq.FT.</td>
+					<td>1070</td>
+				</tr>
+				<tr>
+					<td>Rent</td>
+					<td>$907-$1,014</td>
+				</tr>
+			</table>
+			<img src="<?php echo base_url('application/views/home/images/3f.jpg'); ?>">
+		</div>
+		<div id="wilshire" class="other-detail" id="wilshire">
+			<h4>Stratford</h4>
+			<h2>(Available)</h2>
+			<table>
+				<tr>
+					<td>Bed</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>Bath</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>Sq.FT.</td>
+					<td>1190</td>
+				</tr>
+				<tr>
+					<td>Rent</td>
+					<td>$1,037-$1,164</td>
+				</tr>
+			</table>
+			<img src="<?php echo base_url('application/views/home/images/4f.jpg'); ?>">
+		</div>
+		
+			<div class="availability">Availability</div>
+	</div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-top-at">
+			<h4>Our Company</h4>
+				<ul class="nav-bottom">
+					<li><img src="<?php echo base_url('application/views/home/images/location.png'); ?>">kent neighborhood kent state OH, 44240</li>
+					<li><img src="<?php echo base_url('application/views/home/images/phone.png'); ?>">Call us : 330-xxx-xxxx</li>
+				</ul>
+				<ul class="social">
+					<li><a href="#"><i> </i></a></li>
+					<li><a href="#"><i class="gmail"> </i></a></li>
+					<li><a href="#"><i class="twitter"> </i></a></li>
+				</ul>
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="col-md-4 footer-logo">
+				<h2><a href="<?php echo base_url('application/views/home/index.html'); ?>">Kent Neighborhood</a></h2>
+			</div>
+			<div class="col-md-8 footer-class">
+				<p >Copyright &copy; kent state capstone group.2016</p>
+			</div>
+		<div class="clearfix"> </div>
+	 	</div>
+	</div>
+</div>
+<!--//footer-->
+</body>
+</html> 

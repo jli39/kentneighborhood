@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="<?php echo base_url('application/views/styles/style.css'); ?>" type="text/css"/>
+    <script src="<?php echo base_url('application/views/scripts/libs/modernizr/modernizr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('application/views/scripts/config.js'); ?>" type="text/javascript"></script>
+</head>
+<body>
+	<section id="main" class="column main_shadow" >
+        <article class="module width_3_quarter">
+            <header><h3 class="tabs_involved">Card</h3>
+            <ul class="tabs">
+                <li class="active"><a href="<?php echo site_url('user/CardController/addcard');?>">Add a New card</a></li>
+            </ul>
+            </header>
+
+<div class="tab_container">
+                <div id="tab1" class="tab_content">
+                <table class="tablesorter" cellspacing="0"> 
+                    <thead> 
+                        <tr>  
+                            <th>Username</th> 
+                            <th>Card type</th> 
+                            <th>Card number</th>
+                            <th>Card Name</th>
+                            <th>Card Expire Date</th>
+                            <th>cvv</th>
+                            <th>action</th>
+                        </tr> 
+                    </thead> 
+                   
+
+                   <tbody> 
+                    <?php foreach($info as $row):?>
+                        <tr> 
+                            <td><?php echo $row['username']?></td>
+                            <td><?php echo $row['card_type']?></td>
+                            <td><?php echo $row['card_num']?></td>
+                            <td><?php echo $row['card_name']?></td>
+                            <td><?php echo $row['exp_date']?></td>
+                            <td><?php echo $row['cvv']?></td>
+                            <td><a href="<?php echo site_url('user/card_controllers/delete/') . $row['card_num'];?>">delete</a></td> 
+                        </tr> 
+                    <?php endforeach; ?>
+                    </tbody> 
+                    
+                    </table>
+                </div><!-- end of #tab1 -->
+            </div><!-- end of .tab_container -->
+
+
+
+
+
+            
+            
+            
+        </article><!-- end of content manager article -->
+    </section>
+</body>
+</html>

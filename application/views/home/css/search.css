@@ -1,0 +1,29 @@
+.result-container{
+	width: 95%;
+}
+.result-container table{
+	width: 100%;
+	margin: 20px;
+}
+.result-container table tr td,th{
+	padding: 5px;
+	border: solid 1px #555;
+}
+.result-container table tr th{
+	border-color: #bbb;
+	background: #555;
+	color: #fff;
+}
+
+.waitlist{
+	margin: 20px;
+}
+
+.waitlist a{
+	padding: 5px;
+	background: #bbb;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}

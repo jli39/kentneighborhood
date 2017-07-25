@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="<?php echo base_url('application/views/styles/style.css'); ?>" type="text/css"/>
+    <script src="<?php echo base_url('application/views/scripts/libs/modernizr/modernizr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('application/views/scripts/config.js'); ?>" type="text/javascript"></script>
+</head>
+<body>
+	<section id="main" class="column main_shadow" >
+        <article class="module width_3_quarter">
+            <header><h3 class="tabs_involved">Payment</h3>
+            <ul class="tabs">
+                <li class="active"><a href="<?php echo site_url('user/PaymentController/viewpayment');?>">Return</a></li>
+            </ul>
+            </header>
+            
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+                
+<form method = "post" action="<?php echo site_url('user/PaymentController/insert');?>" name=''>
+                    <div class="module_content w500">
+                     
+        <fieldset>
+          <label  class="control-label" for="warning">Card:</label>
+            <select name="card_num" class="form-control">
+            <?php foreach($info as $row):?>
+                <option value="<?php echo $row['card_num']?>"><?php echo $row['card_num']?></option>
+            <?php endforeach; ?>
+            </select>
+        </fieldset>
+
+
+<fieldset>
+          <label  class="control-label" for="warning">Paying Month:</label>
+                                            <select name="payment_month" class="form-control">
+                                            <option value="">Month</option>
+                                                <option value="2017-01">January (01)</option>
+                                                <option value="2017-02">February (02)</option>
+                                                <option value="2017-03">March (03)</option>
+                                                <option value="2017-04">April (04)</option>
+                                                <option value="2017-05">May (05)</option>
+                                                <option value="2017-06">June (06)</option>
+                                                <option value="2017-07">July (07)</option>
+                                                <option value="2017-08">August (08)</option>
+                                                <option value="2017-09">September (09)</option>
+                                                <option value="2017-10">October (10)</option>
+                                                <option value="2017-11">November (11)</option>
+                                                <option value="2017-12">December (12)</option>
+                                            </select>
+          </fieldset>
+          
+<fieldset>
+           <label>Payment Amount</label>
+                                            <input type="int"  name="amount" class="form-control" id="error"  />
+        </fieldset>
+
+
+        
+        <div class="tc mt20">
+          <input type="submit" class="button green" id="btnAdd"> 
+        </div>
+      </div>
+                    </form>
+                </div><!-- end of #tab1 -->
+            </div><!-- end of .tab_container -->
+            <div style="<?php echo $display; ?>"><h4 class="alert_info"><?php echo $message; ?></h4></div>
+        </article><!-- end of content manager article -->
+    </section>
+</body>
+</html>

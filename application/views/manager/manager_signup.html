@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<title>manager signup</title>
+	<link rel="stylesheet" href="<?php echo base_url('application/views/styles/style.css'); ?>" type="text/css"/>
+	<script src="<?php echo base_url('application/views/scripts/libs/modernizr/modernizr.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('application/views/scripts/config.js'); ?>" type="text/javascript"></script>
+</head>
+<body>
+	<header id="header">
+		<hgroup>
+			<h1 class="site_title"><a href="<?php echo base_url('application/views/index.html'); ?>">KentNeighboor</a></h1>
+		</hgroup>
+	</header> <!-- end of header bar -->
+	<div class="w500 mc ovh">
+		<section id="main" >
+			<article class="module width_full">
+				<header><h3>Sign up</h3></header>
+				<div class="module_content">
+					<form method = "post" action="<?php echo site_url('admin/privilege/signin');?>" name='loginform'>
+						<fieldset>
+							<label for="username">UserName</label>
+							<input type="text" name="username"/>
+						</fieldset>
+						<fieldset>
+							<label for="password">PassWord</label>
+							<input type="password" name="password"/>
+						</fieldset>
+						<fieldset>
+							<label for="comfirm_password">comfirm_password</label>
+							<input type="password" name="comfirm_password"/>
+						</fieldset>
+						<fieldset>
+							<label for="firstname">firstname</label>
+							<input type="text" name="firstname"/>
+						</fieldset>
+						<fieldset>
+							<label for="lastname">lastname</label>
+							<input type="text" name="lastname"/>
+						</fieldset>
+						<fieldset>
+							<label for="social">social security number</label>
+							<input type="text" name="social"/>
+						</fieldset>
+						<fieldset>
+							<label for="email">email</label>
+							<input type="text" name="email"/>
+						</fieldset>
+						<fieldset>
+							<label for="captcha">Verification code</label>
+							<input type="password" name="captcha"/>
+						</fieldset>
+						<div class="tc h30">
+							<input type="submit" value="register" class="button green" />
+						</div>
+						<div style="<?php echo $display; ?>"><h4 class="alert_error"><?php echo $message; ?></h4></div>
+					</form>
+				</div>
+			</article>
+		</section>
+	</div>
+	<script src="<?php echo base_url('application/views/scripts/libs/require/require.js'); ?>" type="text/javascript" data-main="scripts/app/index/main"></script>
+</body>
+</html>
+

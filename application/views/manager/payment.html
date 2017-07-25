@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="<?php echo base_url('application/views/manager/styles/style.css'); ?>" type="text/css"/>
+    <script src="<?php echo base_url('application/views/manager/scripts/libs/modernizr/modernizr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('application/views/manager/scripts/config.js'); ?>" type="text/javascript"></script>
+    
+</head>
+<body>
+    <section id="main" class="column main_shadow">
+        <article class="module width_full">
+        <form method = "post" action="<?php echo site_url('manager/PaymentController/remainpayment/');?>" name='appartment'>
+            <header><h3 class="tabs_involved">rent payment</h3>
+            <ul class="tabs">
+                date: 
+                <input type="month" value="<?php echo $date; ?>" name="date" onchange="appartment.submit();"/>        
+            </ul>
+            </header>
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+                    <table class="tablesorter" cellspacing="0"> 
+                    <thead> 
+                        <tr>  
+                            <th>paid/unpiad</th> 
+                            <th>room number</th> 
+                            <th>date</th>
+                            <th>pay for</th>
+                        </tr> 
+                    </thead> 
+                    <tbody> 
+                    <?php foreach($info as $row):?>
+                        <?php if($date <= $row['payment_month']):?>
+                            <tr> 
+                                <td>paid</td>
+                                <td><?php echo $row['room_num']?></td>
+                                <td><?php echo $row['payment_time']?></td>
+                                <td><?php echo $row['payment_month']?></td>
+                            </tr> 
+                        <?php endif; ?>
+                        <?php if($date > $row['payment_month']):?>
+                            <tr> 
+                                <td>unpaid</td>
+                                <td><?php echo $row['room_num']?></td>
+                                <td><?php echo $row['payment_time']?></td>
+                                <td><?php echo $row['payment_month']?></td>
+                            </tr> 
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                    </tbody> 
+                    </table>
+                    <?php if (strlen($pagination)): ?>
+                    <div>
+                        Pages: <?php echo $pagination; ?>
+                    </div>
+                <?php endif; ?>
+                </div><!-- end of #tab1 -->
+            </div><!-- end of .tab_container -->
+            </form>
+        </article><!-- end of content manager article -->
+    </section>
+</body>
+</html>

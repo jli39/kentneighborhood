@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="<?php echo base_url('application/views/styles/style.css'); ?>" type="text/css"/>
+    <script src="<?php echo base_url('application/views/scripts/libs/modernizr/modernizr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('application/views/scripts/config.js'); ?>" type="text/javascript"></script>
+</head>
+<body>
+	<section id="main" class="column main_shadow" >
+        <article class="module width_3_quarter">
+            <header><h3 class="tabs_involved">Card</h3>
+            <ul class="tabs">
+                <li class="active"><a href="<?php echo site_url('user/CardController/viewcard');?>">Return</a></li>
+            </ul>
+            </header>
+
+
+
+
+            
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+                
+
+<form method = "post" action="<?php echo site_url('user/CardController/insert');?>" name=''>
+                    <div class="module_content w500">
+                     
+          
+
+        
+
+         
+        <fieldset>
+          <label class="control-label" for="warning">Card Type</label>
+                                            
+                                            <select name="card_type" class="form-control">
+                                            <option value="">Card Type</option>
+                                                <option value="credit">Credit Card</option>
+                                                <option value="debit">Debit Card</option>
+                                            </select>
+        </fieldset>
+        <fieldset>
+          <label for="txtName">Name on Card</label>
+          <input name="card_name" type="text" id="txtName"/>
+        </fieldset>
+        <fieldset>
+          <label for="txtModule">Card number</label>
+          <input name="card_num" type="int" id="txtModule"/>
+        </fieldset>
+        <fieldset>
+          <label  class="control-label" for="warning">Expiration Date:</label>
+                                            <select name="exp_month" class="form-control">
+                                            <option value="">Month</option>
+                                                <option value="01">January (01)</option>
+                                                <option value="02">February (02)</option>
+                                                <option value="03">March (03)</option>
+                                                <option value="04">April (04)</option>
+                                                <option value="05">May (05)</option>
+                                                <option value="06">June (06)</option>
+                                                <option value="07">July (07)</option>
+                                                <option value="08">August (08)</option>
+                                                <option value="09">September (09)</option>
+                                                <option value="10">October (10)</option>
+                                                <option value="11">November (11)</option>
+                                                <option value="12">December (12)</option>
+                                            </select>
+                                            
+
+                                            <select name="exp_year" class="form-control">
+                                            <option value="">Year</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                 <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                                 <option value="2026">2026</option>
+                                                  <option value="2027">2027</option>
+                                                <option value="2028">2028</option>
+                                                <option value="2029">2029</option>
+                                                 <option value="2030">2030</option>
+                                                 <option value="2031">2031</option>
+                                                 <option value="2032">2032</option>
+                                                 <option value="2033">2033</option>
+                                                 <option value="2034">2034</option>
+                                                  <option value="2035">2035</option>
+                                                 <option value="2036">2036</option>
+                                            </select>
+        </fieldset>
+
+        <fieldset>
+          <label for="txtModule">Card cvv</label>
+          <input name="cvv" type="int" id="txtModule"/>
+        </fieldset>
+
+        
+
+        
+        <div class="tc mt20">
+          <input type="submit" class="button green" id="btnAdd"> 
+
+        </div>
+      </div>
+                    </form>
+                </div><!-- end of #tab1 -->
+            </div><!-- end of .tab_container -->
+            <div style="<?php echo $display; ?>"><h4 class="alert_info"><?php echo $message; ?></h4></div>
+        </article><!-- end of content manager article -->
+    </section>
+</body>
+</html>

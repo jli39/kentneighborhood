@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title></title>
+    <link rel="stylesheet" href="<?php echo base_url('application/views/styles/style.css'); ?>" type="text/css"/>
+    <script src="<?php echo base_url('application/views/scripts/libs/modernizr/modernizr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('application/views/scripts/config.js'); ?>" type="text/javascript"></script>
+</head>
+<body>
+
+<section id="main" class="column main_shadow" >
+        <article class="module width_full">
+            <header><h3>Dashboard</h3></header>
+            <div class="module_content">
+                <article class="stats_graph">
+                    <img src="<?php echo base_url('application/views/images/kent.jpg'); ?>" width="100%"  alt="123" />
+                </article>
+
+                <article class="stats_overview">
+                    
+                    
+                    <iframe src="//www.seniverse.com/weather/weather.aspx?uid=U1C002B188&cid=CHBJ000000&l=en&p=SMART&a=1&u=C&s=1&m=2&x=1&d=5&fc=&bgc=&bc=&ti=0&in=0&li=" frameborder="0" scrolling="no" width="200" height="290" allowTransparency="true"></iframe>
+                    </article>
+            <div class="clear"></div>
+            </div>
+        </article><!-- end of stats article -->
+
+        <article class="module width_3_quarter">
+            <header><h3 class="tabs_involved">Announcement</h3>
+            </header>
+
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+                    <table class="tablesorter" cellspacing="0" style="table-layout:fixed" width="100%" > 
+                    <thead> 
+                        <tr>  
+                            <th>date</th>
+                            <th>title</th> 
+                            <th>content</th> 
+                        </tr> 
+                    </thead> 
+                    <tbody> 
+                    <?php foreach($info as $row):?>
+                            <tr> 
+                                <td width="10%"><?php echo $row['publish_time']?></td>
+                                <td width="20%"><?php echo $row['title']?></td>
+                                <td style="word-wrap : break-word; overflow:hidden;"><?php echo $row['content']?></td>
+                            </tr> 
+                    <?php endforeach; ?>
+                    </tbody> 
+                    </table>
+                   
+                </div><!-- end of #tab1 -->
+            </div><!-- end of .tab_container -->
+        </article><!-- end of content manager article -->
+
+    <!--<article class="module width_quarter">
+            <header><h3>Messages</h3></header>
+            <div class="message_list">
+                <div class="module_content">
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            <footer>
+                <form class="post_message">
+                    <input type="text" value="Message" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
+                    <input type="submit" class="btn_post_message" value=""/>
+                </form>
+            </footer>
+        </article><!-- end of messages article --> 
+        
+
+        <article class="module width_3_quarter">
+            <header><h3 class="tabs_involved">Like our community</h3>
+            </header>
+
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+                    <div class="fb-page" data-href="https://www.facebook.com/PebblebrookApartments/" data-width="500" data-height="500" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true" ><blockquote cite="https://www.facebook.com/PebblebrookApartmen8ts/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PebblebrookApartments/">Pebblebrook Apartments</a></blockquote></div>
+                   
+                </div><!-- end of #tab1 -->
+            </div><!-- end of .tab_container -->
+            </article>
+
+
+
+        
+
+             
+    </section>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+</body>
+</html>

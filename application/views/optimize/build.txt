@@ -1,0 +1,16 @@
+
+app/index/main.js
+----------------
+libs/jquery/jquery.js
+views/util/shortcutView.js
+app/index/app.js
+app/index/main.js
+
+app/menu_list/main.js
+----------------
+libs/jquery/jquery.js
+views/util/shortcutView.js
+models/menu/menuModel.js
+views/menu/listView.js
+app/menu_list/app.js
+app/menu_list/main.js

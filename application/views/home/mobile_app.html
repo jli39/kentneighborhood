@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search</title>
+<link href="<?php echo base_url('application/views/home/css/bootstrap.css'); ?>" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="<?php echo base_url('application/views/home/js/jquery.min.js'); ?>"></script>
+<!-- Custom Theme files -->
+<!--menu-->
+<script src="<?php echo base_url('application/views/home/js/scripts.js'); ?>"></script>
+<link href="<?php echo base_url('application/views/home/css/styles.css'); ?>" rel="stylesheet">
+<!--//menu-->
+<!--theme-style-->
+<link href="<?php echo base_url('application/views/home/css/style.css'); ?>" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Home" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- slide -->
+<script src="<?php echo base_url('application/views/home/js/responsiveslides.min.js'); ?>"></script>
+   <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+</head>
+<body >
+<!--header-->
+<div class="header">
+	<div class="container">
+		<!--logo-->
+			<div class="logo">
+				<h1><a href="<?php echo base_url('application/views/home/index.html'); ?>">Kent Neighborhood</a></h1>
+			</div>
+		<!--//logo-->
+		<div class="top-nav">
+			<ul class="right-icons">
+				<li><a class="play-icon user-popup" href="<?php echo base_url('application/views/home/#user-dialog'); ?>"><i class="glyphicon glyphicon-user"> </i>User</a></li>
+				<li><a class="play-icon admin-popup" href="<?php echo base_url('application/views/home/#admin-dialog'); ?>"><i class="glyphicon glyphicon-cog"> </i>Admin</a></a></li>
+				
+			</ul>
+		<div class="clearfix"> </div>
+			<!--pop-up-box-->
+			   
+				<link href="<?php echo base_url('application/views/home/css/popuo-box.css'); ?>" rel="stylesheet" type="text/css" media="all"/>
+				<script src="<?php echo base_url('application/views/home/js/jquery.magnific-popup.js'); ?>" type="text/javascript"></script>
+			<!--//pop-up-box-->
+				<div id="user-dialog" class="mfp-hide">
+					    <!-- tabs-box -->
+				<div class="sap_tabs">	
+				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						  <ul class="resp-tabs-list">
+						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>User Login</span></li>
+							  <div class="clearfix"></div>
+						  </ul>				  	 
+						  <div class="login-container">
+						  	<label for="email">Email</label><br>
+						  	<input id="email" type="email" name="email">
+						  	<br>
+						  	<label for="password">password</label><br>
+						  	<input id="password" type="password" name="password">
+						  	<br>
+						  	<div id="signin">Sign in</div>
+						  	<ul>
+					      		<li><a href="#">Forgot password?</a></li>
+					      		<li><a href="#">Click here to register.</a></li>
+					      		<li><a href="#">Send Verification Email.</a></li>
+					      	</ul>
+					      </div>
+					 </div>
+				</div>
+				</div>
+				 <script>
+						$(document).ready(function() {
+						$('.user-popup').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+
+
+				<div id="admin-dialog" class="mfp-hide">
+					    <!-- tabs-box -->
+				<div class="sap_tabs">	
+				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						  <ul class="resp-tabs-list">
+						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>Admin Login</span></li>
+							  <div class="clearfix"></div>
+						  </ul>				  	 
+						  <div class="login-container">
+						  	<label for="email">Email</label><br>
+						  	<input id="email" type="email" name="email">
+						  	<br>
+						  	<label for="password">password</label><br>
+						  	<input id="password" type="password" name="password">
+						  	<br>
+						  	<div id="signin">Sign in</div>
+						  	<ul>
+					      		<li><a href="#">Forgot password?</a></li>
+					      		<li><a href="#">Click here to register.</a></li>
+					      		<li><a href="#">Send Verification Email.</a></li>
+					      	</ul>
+					      </div>
+					 </div>
+				</div>
+				</div>
+				 <script>
+						$(document).ready(function() {
+						$('.admin-popup').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+					
+	
+		</div>
+		<div class="clearfix"> </div>
+		</div>	
+</div>
+<!--//-->	
+<div class=" banner-buying">
+	<div class=" container">
+	<h3><span>Mobi</span>le</h3> 
+	<!---->
+	<div class="menu-right">
+		 <ul class="menu">
+			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
+			<ul class="cute">
+				<li class="subitem1"><a href="<?php echo base_url('application/views/home/buy.html'); ?>">Buy </a></li>
+				<li class="subitem2"><a href="<?php echo base_url('application/views/home/buy.html'); ?>">Rent </a></li>
+				<li class="subitem3"><a href="<?php echo base_url('application/views/home/buy.html'); ?>">Hostels </a></li>
+				<li class="subitem1"><a href="<?php echo base_url('application/views/home/buy.html'); ?>">Resale</a></li>
+				<li class="subitem2"><a href="<?php echo base_url('application/views/home/loan.html'); ?>">Home Loan</a></li>
+				<li class="subitem3"><a href="<?php echo base_url('application/views/home/buy.html'); ?>">Apartment </a></li>
+				<li class="subitem3"><a href="<?php echo base_url('application/views/home/dealers.html'); ?>">Dealers</a></li>
+			</ul>
+		</li>
+		</ul>
+	</div>
+	<div class="clearfix"> </div>
+		<!--initiate accordion-->
+		<script type="text/javascript">
+			$(function() {
+			    var menu_ul = $('.menu > li > ul'),
+			           menu_a  = $('.menu > li > a');
+			    menu_ul.hide();
+			    menu_a.click(function(e) {
+			        e.preventDefault();
+			        if(!$(this).hasClass('active')) {
+			            menu_a.removeClass('active');
+			            menu_ul.filter(':visible').slideUp('normal');
+			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+			        } else {
+			            $(this).removeClass('active');
+			            $(this).next().stop(true,true).slideUp('normal');
+			        }
+			    });
+			
+			});
+		</script>
+      		
+	</div>
+</div>
+<!--//header-->
+<!---->
+<div class="phone">
+		<div class="container">
+			<div class="col-md-6">
+				<img src="<?php echo base_url('application/views/home/images/ph1.png'); ?>" class="img-responsive" alt="">
+			</div>
+			<div class="col-md-6 phone-text">
+				<h4>Search Homes Everywhere</h4>
+					<div class="text-1">
+						<h5>Custom Location Tracker</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
+					</div>
+					<div class="text-1">
+						<h5>Map Search</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
+					</div>
+					<div class="text-1">
+						<h5>Quick Details</h5>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
+					</div>
+					<a href="#" class="hvr-sweep-to-right more">Download the App</a>
+			</div>
+		</div>
+	</div>
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-top-at">
+			<h4>Our Company</h4>
+				<ul class="nav-bottom">
+					<li><img src="<?php echo base_url('application/views/home/images/location.png'); ?>">kent neighborhood kent state OH, 44240</li>
+					<li><img src="<?php echo base_url('application/views/home/images/phone.png'); ?>">Call us : 330-xxx-xxxx</li>
+				</ul>
+				<ul class="social">
+					<li><a href="#"><i> </i></a></li>
+					<li><a href="#"><i class="gmail"> </i></a></li>
+					<li><a href="#"><i class="twitter"> </i></a></li>
+				</ul>
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="col-md-4 footer-logo">
+				<h2><a href="<?php echo base_url('application/views/home/index.html'); ?>">Kent Neighborhood</a></h2>
+			</div>
+			<div class="col-md-8 footer-class">
+				<p >Copyright &copy; kent state capstone group.2016</p>
+			</div>
+		<div class="clearfix"> </div>
+	 	</div>
+	</div>
+</div>
+<!--//footer-->
+</body>
+</html>

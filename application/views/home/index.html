@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kent Neighborhood</title>
+<link href="<?php echo base_url('application/views/home/css/bootstrap.css'); ?>" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="<?php echo base_url('application/views/home/js/jquery.min.js'); ?>"></script>
+<!-- Custom Theme files -->
+<!--menu-->
+<script src="<?php echo base_url('application/views/home/js/scripts.js'); ?>"></script>
+<link href="<?php echo base_url('application/views/home/css/styles.css'); ?>" rel="stylesheet">
+<!--//menu-->
+<!--theme-style-->
+<link href="<?php echo base_url('application/views/home/css/style.css'); ?>" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Home" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- slide -->
+<script src="<?php echo base_url('application/views/home/js/responsiveslides.min.js'); ?>"></script>
+   <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+</head>
+<body >
+<!--header-->
+<div class="header">
+	<div class="container">
+		<!--logo-->
+			<div class="logo">
+				<h1><a href="<?php echo site_url('Home/index'); ?>">Kent Neighborhood</a></h1>
+			</div>
+		<!--//logo-->
+		<div class="top-nav">
+			<ul class="right-icons">
+				<li><a class="play-icon user-popup" href="<?php echo site_url('user/LogController/login');?>"><i class="glyphicon glyphicon-user"> </i>User</a></li>
+				<li><a class="play-icon admin-popup" href="<?php echo site_url('manager/LoginController/login');?>"><i class="glyphicon glyphicon-cog"> </i>Admin</a></a></li>
+				<li><a>(test/test)</a></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--//-->	
+	<div class=" header-right">
+		<div class=" banner">
+			 <div class="slider">
+			    <div class="callbacks_container">
+			      <ul class="rslides" id="slider">		       
+					 <li>
+			          	 <div class="banner-item banner1">
+			           		<div class="caption">
+					          	<h3>Kent Neighborhood</h3>
+			          		</div>
+			          	</div>
+			         </li>
+					 <li>
+			          	 <div class="banner-item banner2">
+			           		<div class="caption">
+					          	<h3>Kent Neighborhood</h3>
+			          		</div>
+			          	</div>
+			         </li>
+			         <li>
+			          	 <div class="banner-item banner3">
+			           		<div class="caption">
+					          	<h3>Kent Neighborhood</h3>
+			          		</div>
+			          	</div>
+			         </li>		
+			      </ul>
+			  </div>
+			</div>
+		</div>
+	</div>
+	 
+	<!--header-bottom-->
+	<div class="banner-bottom-top">
+			<div class="container">
+			<div class="bottom-header">
+				<div class="header-bottom">
+					<div class=" bottom-head">
+						<a href="#">
+							<div class="buy-media">
+								<i class="buy"> </i>
+								<h6>Home</h6>
+							</div>
+						</a>
+					</div>
+					<div class=" bottom-head">
+						<a href="#apt-map">
+							<div class="buy-media">
+							<i class="rent"> </i>
+							<h6>Map</h6>
+							</div>
+						</a>
+					</div>
+					<div class=" bottom-head">
+						<a href="<?php echo site_url('HomeController/photos'); ?>">
+							<div class="buy-media">
+							<i class="pg"> </i>
+							<h6>Photos</h6>
+							</div>
+						</a>
+					</div>
+					<div class=" bottom-head">
+						
+						<a href="<?php echo site_url('HomeController/search'); ?>">
+							<div class="buy-media">
+							<i class="sell"> </i>
+							<h6>Search</h6>
+							</div>
+						</a>
+					</div>
+					<div class=" bottom-head">
+						<a href="<?php echo site_url('HomeController/floorplans'); ?>">
+							<div class="buy-media">
+							<i class="loan"> </i>
+							<h6>Floor Plans</h6>
+							</div>
+						</a>
+					</div>
+					<div class=" bottom-head">
+						<a href="<?php echo site_url('HomeController/contact'); ?>">
+							<div class="buy-media">
+							<i class="deal"> </i>
+							<h6>Contact Us</h6>
+							</div>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+	</div>
+	</div>
+			<!--//-->
+				
+	<!--//header-bottom-->
+	
+	
+<!--//header-->
+<!--content-->
+<div class="content">
+	<div class="content-grid">
+		<div class="container">
+			<h3>Most Popular</h3>
+				<div class="col-md-4 box_2">
+			     	 <a href="<?php echo site_url('HomeController/photos'); ?>" class="mask">
+			     	   	<img class="img-responsive zoom-img" src="<?php echo base_url('application/views/home/images/pc4.jpg'); ?>" alt="">
+			     	 </a>
+			     	   <div class="most-1">
+			     	   	 <h5><a href="<?php echo site_url('HomeController/photos'); ?>">VIEW GALLERY</a></h5>
+			     	   </div>
+			 </div>
+			  <div class="col-md-4 box_2">
+		     	 <a href="<?php echo site_url('HomeController/photos'); ?>" class="mask">
+			     	   	<img class="img-responsive zoom-img" src="<?php echo base_url('application/views/home/images/pc5.jpg'); ?>" alt="">
+			     	 </a>
+		     	   <div class="most-1">
+			     	   	<h5><a href="<?php echo site_url('HomeController/photos'); ?>">VIEW GALLERY</a></h5>
+			     	   </div>
+		     	
+		      </div>
+			  <div class="col-md-4 box_2">
+		     	 <a href="<?php echo site_url('HomeController/photos'); ?>" class="mask">
+			     	   	<img class="img-responsive zoom-img" src="<?php echo base_url('application/views/home/images/pc3.jpg'); ?>" alt="" >
+			     	 </a>
+		     	   <div class="most-1">
+			     	   	 <h5><a href="<?php echo site_url('HomeController/photos'); ?>">VIEW GALLERY</a></h5>
+			     	   </div>
+		     	
+		      </div>
+		 	<div class="clearfix"> </div>
+		</div>
+	</div></div>
+<!--//apartment-search-->
+	<div id="apt-search" class="project">
+		<div class="container">
+			<h3>Apartment Search</h3>
+				<div class="project-top">
+					<div class="col-md-3 project-grid">
+						<select name="beds" required>
+							<option disabled selected>Beds</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+					</div>
+					<div class="col-md-3 project-grid">
+						<input type="number" name="max" placeholder="Max Rent" min="0">
+					</div>
+					<div class="col-md-3 project-grid">
+						<input type="date" name="date"  placeholder="Move In Date">
+					</div>
+					<div class="col-md-3 project-grid">
+						<input type="text" name="apartment"  placeholder="Apartment#">
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div id="search-container"><a href="<?php echo site_url('HomeController/search'); ?>" id="search">Search</a></div>
+		</div>
+	</div>
+<!--//apartment-search-->
+
+<center>
+<div id="apt-map" style="margin: 200px;height: 580px;width:960px;"> 
+    <iframe src="<?php echo base_url('application/views/home/home.html');?>" frameborder="0" scrolling="no" height="400" width="700"> 
+    </iframe> 
+</div> 
+</center>
+
+
+
+
+<!--more-->
+	<div class="more">
+	<div class="more-grid">
+		<div class="container">
+			<h3>More</h3>
+				<div class="col-md-4 box_2">
+			     	   <div class="more-1">
+			     	   	 <h5>Welcome</h5>
+			     	    	<p>kent Neighborhood is an off campus student community located at the @@@.The newly renovated community is located within walking distance to classes across from @@@.Perfectly located.You will benefit from individual leases,a fully furnished apartment and rental rates include cable.Internet,water,sewer and FREE heat!</p>
+			     	    	<p>You`ve got lots of options to choose from at kent Neighborhood.For those that wish to live alone,our spacious one bedroom apartments are sure to fit your needs.If you prefer to live with others,you can choose from the two and three bedroom apartments each consisting of two different styles.</p>
+			     	   </div>
+			     	   <a href="#" class="more-link">
+			     	   		<span class="most-link-see">Register</span>
+			     	 	</a>
+			 </div>
+			  <div class="col-md-4 box_2">
+		     	   <div class="more-1">
+			     	   	<h5>Amenities</h5>
+			     	    	<p>In addition to the newly renovated apartments,residents will enjoy 24-hour access to the Clubhouse!The Clubhouse consists of the latest and greatest amenities including a fitness center,study lounge,business center,billiards room,tanning bed as well as an outdoor fireplace.On-site management and specially designed events and services;ken Neighborhood is where you will cultivate your own ideal lifestyle!</p>
+			     	   </div>
+			     	  <a href="#" class="more-link">
+			     	   		<span class="most-link-see">View Details</span>
+			     	 	</a>
+		     	
+		      </div>
+			  <div class="col-md-4 box_2">
+		     	   <div class="more-1">
+			     	   	 <h5>Great Apartment</h5>
+			     	    	<p>Ken Neighborhood was recently renovated;thes includes major upgrades to the 10,000 square foot common area!Study with friends or watch the game white you work out in our 24-hr fitness center.Weather-permitting take a dip in the pool or sunbathe on our outdoor deck.Access to all these amenities is included with your rent and it`s all within walking distance to Kent State!</p>
+			     	   </div>
+			     	   <a href="#" class="more-link">
+			     	   		<span class="most-link-see">Schedule A Tour</span>
+			     	 	</a>
+		     	
+		      </div>
+		 	<div class="clearfix"> </div>
+		</div>
+	</div>
+<!--//more-->
+
+
+
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-top-at">
+			<h4>Our Company</h4>
+				<ul class="nav-bottom">
+					<li><img src="<?php echo base_url('application/views/home/images/location.png'); ?>">kent neighborhood kent state OH, 44240</li>
+					<li><img src="<?php echo base_url('application/views/home/images/phone.png'); ?>">Call us : 330-xxx-xxxx</li>
+				</ul>
+				<ul class="social">
+					<li><a href="#"><i> </i></a></li>
+					<li><a href="#"><i class="gmail"> </i></a></li>
+					<li><a href="#"><i class="twitter"> </i></a></li>
+				</ul>
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="col-md-4 footer-logo">
+				<h2><a href="index.html">Kent Neighborhood</a></h2>
+			</div>
+			<div class="col-md-8 footer-class">
+				<p >Copyright &copy; kent state capstone group.2016</p>
+			</div>
+		<div class="clearfix"> </div>
+	 	</div>
+	</div>
+</div>
+<!--//footer-->
+</body>
+</html>

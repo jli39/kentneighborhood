@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link rel="stylesheet" href="<?php echo base_url('application/views/manager/styles/style.css'); ?>" type="text/css"/>
+    <script src="<?php echo base_url('application/views/manager/scripts/libs/modernizr/modernizr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('application/views/manager/scripts/config.js'); ?>" type="text/javascript"></script>
+</head>
+<body>
+	<section id="main" class="column main_shadow">
+        <article class="module width_full">
+            <header><h3 class="tabs_involved">Profile</h3></header>
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+					<form method = "post" action="<?php echo site_url('manager/ManagerController/changepassword');?>" name='register'>
+				        <fieldset>
+				        <table class="tablesorter" cellspacing="0"> 
+				        <tbody> 
+				            <?php foreach($user as $row):?>
+				                <tr> 
+				                    <td><label for="">username:    </label><input type="text" value="<?php echo $row['username']?>" name="username" readonly="true"/></td>
+				                </tr> 
+				                <tr>
+				                	<td><label for="">old password:    </label><input type="text" name="password"/></td> 
+				                </tr>
+				                <tr>
+				                	<td><label for="">new password:    </label><input type="text" name="new_password"/></td> 
+				                </tr>
+				                <tr>
+				                	<td><label for="">confirm password:    </label><input type="text" name="confirm_password"/></td> 
+				                </tr>
+				                <tr>
+				                    <td><input type="submit" value="register" class="button darkgray" /></td>
+				                </tr>
+				            <?php endforeach; ?>
+				        </tbody> 
+				        </table>
+				        </fieldset>
+				    </form>
+				    <div style="<?php echo $errormessage; ?>"><h4 class="alert_error"><?php echo $message; ?></h4></div>
+				    <div style="<?php echo $successmessage; ?>"><h4 class="alert_success"><?php echo $message; ?></h4></div>
+				</div>
+			</div>
+		</article>
+	</section>
+</body>
+</html>
