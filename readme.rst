@@ -1,28 +1,26 @@
 ###################
-What is CodeIgniter
+What is Kentneigborhood community rental management system
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Kentneighborhood(community rental management system)built on CodeIgnitor MVC framework.The homepage allows visitor browse community information and check available rooms, and it is also a platform for resident and admin to manage their daily routine.
 
 
 *******************
 System Requirements
 *******************
 
-Download realated `XAMPP <https://www.apachefriends.org/index.html>`_ for your system and install.
+1.Download realated `XAMPP <https://www.apachefriends.org/index.html>`_ for your system.
+2.Follow the default installation step.
+3.The control panel will open after installation, or you can excute xampp_start under /xampp/.
+4.Start Apache and MySQL on control panel.
+5.Type localhost/ on address bar on your browser, if show XAMPP dashboard, then installation successed.
 
 ************
 Installation
 ************
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+1.Clone or downland the file (kentneighborhood-master)and put it under /xampp/htdocs, make sure the file is root file.
+2.Edit config.php under /xampp/htdocs/kentneighborhood-master/application/config/config.php
 
 *******
 License
