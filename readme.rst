@@ -9,11 +9,11 @@ Kentneighborhood(community rental management system)built on CodeIgnitor MVC fra
 System Requirements
 *******************
 
-1.Download realated `XAMPP <https://www.apachefriends.org/index.html>`_ for your system.
-2.Follow the default installation step.
-3.The control panel will open after installation, or you can excute xampp_start under /xampp/.
-4.Start Apache and MySQL on control panel.
-5.Type localhost/ on address bar on your browser, if show XAMPP dashboard, then installation successed.
+- Download realated `XAMPP <https://www.apachefriends.org/index.html>`_ for your system.
+- Follow the default installation step.
+- The control panel will open after installation, or you can excute xampp_start under /xampp/.
+- Start Apache and MySQL on control panel.
+- Type localhost/ on address bar on your browser, if show XAMPP dashboard, then installation successed.
 
 ************
 Installation
