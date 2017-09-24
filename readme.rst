@@ -19,15 +19,10 @@ System Requirements
 Installation
 ************
 
-1.Clone or downland the file (kentneighborhood-master)and put it under /xampp/htdocs, make sure the file is root file.
-2.Edit config.php under /xampp/htdocs/kentneighborhood-master/application/config/config.php
+- Clone or downland the file (kentneighborhood-master)and put it under /xampp/htdocs, make sure the file is the root file.
+- Open XAMPP control panel again, click 'Admin' of MySQL, phpMyAdmin will pop up in the browser. Click 'New' to create a new table and enter 'kentneighborhood' for the Database name. Click kentneighborhood table and import the kentneighborhood.sql under the file.
+- The database access and route configuration is default. It should work when you follow the step.
 
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
 
 *********
 Resources
