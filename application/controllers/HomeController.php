@@ -43,4 +43,10 @@ class HomeController extends CI_Controller {
 	{
 		$this->load->view('home/search.html');
 	}
+
+	public function map()
+	{
+		$this->load->view('home/map.html');
+	}
+
 }

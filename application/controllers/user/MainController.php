@@ -19,9 +19,10 @@ class MainController extends CI_Controller{
 	public function menu(){
 		$this->load->view('user/user_menu.html');
 	}
-	//public function announcement(){
-		//$this->load->view('user/user_announcement.html');
-	//}
+	
+	public function dashboard(){
+		$this->load->view('user/user_dashboard.html');
+	}
 	
 
 

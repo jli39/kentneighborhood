@@ -1,0 +1,84 @@
+.header-right{
+	padding: 50px 15%;
+	background: linear-gradient(#27da93, #fff);
+}
+#photos-title{
+	font-size: 50px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	z-index: 1000;
+	padding: 20px;
+}
+.my-nav{
+	width: 50px;
+	height: 50px;
+	background: #777;
+	color: #fff;
+	opacity: 0.8;
+	display: inline-block;
+	position: absolute;
+	top: 48%;
+	z-index: 1000;
+	text-align: center;
+	border-radius: 30px;
+	font-size: 31px;
+	cursor: pointer;
+	user-select:none;
+}
+#my-pre-nav{
+	left: 10px;
+}
+#my-nex-nav{
+	right: 10px;
+}
+.banner1{
+	background: url(../images/T1.jpg) no-repeat;
+}
+.banner2{
+	background: url(../images/T2.jpg) no-repeat;
+}
+.banner3{
+	background: url(../images/T3.jpg) no-repeat;
+}
+.banner4{
+	background: url(../images/T4.jpg) no-repeat;
+}
+.banner5{
+	background: url(../images/T5.jpg) no-repeat;
+}
+.banner6{
+	background: url(../images/T6.jpg) no-repeat;
+}
+.banner7{
+	background: url(../images/T7.jpg) no-repeat;
+}
+.banner8{
+	background: url(../images/T8.jpg) no-repeat;
+}
+.banner9{
+	background: url(../images/T9.jpg) no-repeat;
+}
+.banner10{
+	background: url(../images/T10.jpg) no-repeat;
+}
+.banner11{
+	background: url(../images/T11.jpg) no-repeat;
+}
+.banner12{
+	background: url(../images/T12.jpg) no-repeat;
+}
+.banner13{
+	background: url(../images/T13.jpg) no-repeat;
+}
+.banner14{
+	background: url(images/T14.jpg) no-repeat;
+}
+.banner-item{
+	width:100%;
+	min-height: 550px;
+	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}

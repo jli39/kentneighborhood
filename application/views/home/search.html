@@ -18,6 +18,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Home" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
 </head>
 <body >
 <!--header-->
@@ -25,7 +26,7 @@
 	<div class="container">
 		<!--logo-->
 			<div class="logo">
-				<h1><a href="<?php echo site_url('Home/index'); ?>">Kent Neighborhood</a></h1>
+				<h1><a href="<?php echo site_url(''); ?>">Kent Neighborhood</a></h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
@@ -131,6 +132,34 @@
 		</div>	
 </div>
 
+<!--//apartment-search-->
+	<div id="apt-search" class="project">
+		<div class="container">
+			<h3>Apartment Search</h3>
+				<div class="project-top">
+					<div class="col-md-3 project-grid">
+						<select name="beds" required>
+							<option disabled selected>Beds</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+					</div>
+					<div class="col-md-3 project-grid">
+						<input type="number" name="max" placeholder="Max Rent" min="0">
+					</div>
+					<div class="col-md-3 project-grid">
+						<input type="date" name="date"  placeholder="Move In Date">
+					</div>
+					<div class="col-md-3 project-grid">
+						<input type="text" name="apartment"  placeholder="Apartment#">
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div id="search-container"><a href="<?php echo site_url('HomeController/search'); ?>" id="search">Search</a></div>
+		</div>
+	</div>
+<!--//apartment-search-->
+
 <div class="result-container">
 	<table>
 		<tr>
@@ -156,6 +185,11 @@
 </div>
 
 
+
+
+
+
+
 <!--footer-->
 <div class="footer">
 	<div class="container">
@@ -176,10 +210,10 @@
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="<?php echo base_url('application/views/home/index.html'); ?>">Kent Neighborhood</a></h2>
+				<h2><a href="<?php echo base_url(''); ?>">Kent Neighborhood</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
-				<p >Copyright &copy; kent state capstone group.2016</p>
+				<p >Copyright &copy; kent state capstone group.2017</p>
 			</div>
 		<div class="clearfix"> </div>
 	 	</div>

@@ -37,6 +37,14 @@
         	parent.document.getElementById("main-frame").src="<?php echo site_url('manager/IndexController/content');?>";
             parent.document.getElementById("header-frame").src="<?php echo site_url('manager/IndexController/top/') . 'Dashboard/' . 'main';?>";
         }
+        function listpackage(){
+            parent.document.getElementById("main-frame").src="<?php echo site_url('manager/PackageController/pickuppackage');?>";
+            parent.document.getElementById("header-frame").src="<?php echo site_url('manager/IndexController/top/') . 'User/' . 'package';?>";
+        }
+        function checkmaintainance(){
+            parent.document.getElementById("main-frame").src="<?php echo site_url('manager/MaintainanceController/checkmaintainance');?>";
+            parent.document.getElementById("header-frame").src="<?php echo site_url('manager/IndexController/top/') . 'User/' . 'checkmaintainance';?>";
+        }
     </script>
     <script src="<?php echo base_url('application/views/manager/scripts/libs/modernizr/modernizr.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo base_url('application/views/manager/scripts/config.js'); ?>" type="text/javascript"></script>
@@ -60,6 +68,8 @@
             <li><font class="ficomoon icon-question"></font><a href="javascript:listpayment()">payment</a></li>
             <li><font class="ficomoon icon-announcement"></font><a href="javascript:listmaintainance()">maintain</a></li>
             <li><font class="ficomoon icon-admin-role"></font><a href="javascript:listnews()">News</a></li>
+            <li><font class="ficomoon icon-admin-role"></font><a href="javascript:listpackage()">package</a></li>
+            <li><font class="ficomoon icon-admin-role"></font><a href="javascript:checkmaintainance()">checkmaintainance</a></li>
         </ul>
         <footer>
             <hr />
